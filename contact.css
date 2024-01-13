@@ -1,0 +1,51 @@
+body{
+    background-image: url('trash-computer.gif');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    font-weight: 400;
+}
+
+h1{
+    color:crimson;
+    text-align: center;
+    font-stretch: wider;
+    font-weight: bolder;
+    text-decoration: underline;
+    font-size:100px;
+    
+}
+
+p{
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+h2{
+    color: crimson;
+    text-shadow: 1ch;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* modify the back button to make it look nice*/
+.container {
+    height: 200px;
+    position: relative;
+  }
+
+  button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color:blanchedalmond;
+    padding: 14px 28px;
+  }
+
+button:hover{
+    color: crimson;
+}

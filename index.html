@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--This segment is the Nav bar for the home page-->
+<header>
+<div class = "container">
+   <img src="b7c6553835824afda8daeba72c0b82ce (1).png" width= "200" height="90" alt="logo" class="logo">
+   
+    <nav>
+        <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="about.html"> About </a></li>
+            <li><a href="pricing.html"> Pricing </a></li>
+            <li><a href="founders.html"> Founders </a></li>
+            <li><a href="contact.html"> Contact </a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+<h1> Welcome to a realm where your tennis experience is uniquely yours</h1>
+<br>
+<h2> scroll down to start modifying</h2>
+<h3> Rank what you want to get out of your racket. 7 represents the highest priority, while 1 represents the lowest priority  </h3>
+<!--This portion of code creates side by side range sliders that allow the player to choose wat they find important in a string -->
+<!--this container takes in Power and Spin side by side-->
+<div class="parentContainer1">
+    <div class="slideContainer11">
+        <h4>Power Priority</h4>
+        <input type="range" min="1" max="7" value="1" id="myRange11" class="slider11">
+        <p>Value: <span id="value11"></span></p>
+    </div>
+
+    <div class="slideContainer22">
+        <h4>Spin Priority</h4>
+        <input type="range" min="1" max="7" value="1" id="myRange22" class="slider22">
+        <p>Value: <span id="value22"></span></p>
+    </div>
+</div>
+    <!--this container takes in Comfort an Control side by side-->
+    <div class="parentContainer2">
+        <div class="slideContainer33">
+            <h4>Comfort Priority</h4>
+            <input type="range" min="1" max="7" value="1" id="myRange33" class="slider33">
+            <p>Value: <span id="value33"></span></p>
+        </div>
+    
+        <div class="slideContainer44">
+            <h4>Control Priority</h4>
+            <input type="range" min="1" max="7" value="1" id="myRange44" class="slider44">
+            <p>Value: <span id="value44"></span></p>
+        </div>
+    </div>
+    <!--this container takes in Feel and playbility duration side by side-->
+    <div class="parentContainer3">
+        <div class="slideContainer55">
+            <h4>Feel Priority</h4>
+            <input type="range" min="1" max="7" value="1" id="myRange55" class="slider55">
+            <p>Value: <span id="value55"></span></p>
+        </div>
+    
+        <div class="slideContainer66">
+            <h4>Playability Duration Priority</h4>
+            <input type="range" min="1" max="7" value="1" id="myRange66" class="slider66">
+            <p>Value: <span id="value66"></span></p>
+        </div>
+    </div>
+    <!-- we are just left with Durability, so we center it and try to make it the same size as the other ranges-->
+    <h4>Durability Priority</h4>
+    <div class = "slideContainer77">
+        <center>
+        <input type = "range" min="1" max="7" value="1" id="myRange77" class = "slider77">
+            <p>
+            Value: <span id="value77"></span> </p>
+        </center>
+    </div>
+
+<!--this portion is used to determines a grade value for what your looking in a string using a slider method-->
+<!--all this information will be placed and used previous range finders to find the string of best fit-->
+<h3> Rank numerically what your looking to get out of the racket from 1-100
+    <!--power-->
+    <h4>Power</h4>
+    <div class = "slideContainer1">
+    <input type = "range" min="1" max="100" value="1" id="myRange1" class = "slider1">
+        <p>
+        Value: <span id="value1"></span> </p>
+    </div>
+    <!--spin-->
+    <br>
+    <h4>Spin</h4>
+    <div class = "slideContainer2">
+        <input type = "range" min="1" max="100" value="1" id="myRange2" class = "slider2">
+            <p>
+            Value: <span id="value2"></span> </p>
+        </div>
+    <!--comfort-->
+    <br>
+    <h4>Comfort</h4>
+    <div class = "slideContainer3">
+        <input type = "range" min="1" max="100" value="1" id="myRange3" class = "slider3">
+            <p>
+            Value: <span id="value3"></span> </p>
+        </div>
+    <!--control-->
+    <br>
+    <h4>Control</h4>
+    <div class = "slideContainer4">
+        <input type = "range" min="1" max="100" value="1" id="myRange4" class = "slider4">
+            <p>
+            Value: <span id="value4"></span> </p>
+        </div>
+    <!--feel-->
+    <br>
+    <h4>Feel</h4>
+    <div class = "slideContainer5">
+        <input type = "range" min="1" max="100" value="1" id="myRange5" class = "slider5">
+            <p>
+            Value: <span id="value5"></span> </p>
+        </div>
+    <!--playability Durability-->
+    <br>
+    <h4>Playability Duration</h4>
+    <div class = "slideContainer6">
+        <input type = "range" min="1" max="100" value="1" id="myRange6" class = "slider6">
+            <p>
+            Value: <span id="value6"></span> </p>
+        </div>
+    <!--Durability-->
+    <br>
+    <h4>Durability</h4>
+    <div class = "slideContainer7">
+        <input type = "range" min="1" max="100" value="1" id="myRange7" class = "slider7">
+            <p>
+            Value: <span id="value7"></span> </p>
+        </div>
+    <!--this header prints the final value we want to get out of our method-->
+    <h5 id = "showAnswer"></h5>
+    <br>
+
+    <!--this portion does a small calculation to have a user figure out what string tenision they want to use-->
+    <h3>Now enter a desired tenison from 0 - 60 lbs.<br>if you are unsure what tension you should use, enter 55 into the text box. <br>if you have any arm injuries, opt for power and control.</h3>
+    <div class="centerTensionInput">
+    <input type = "text" id="tensionInput"/>
+    </div>
+    <div class = "TensionAdjust">
+    <button id = "pAndCButton"> Power and control </button>
+    <button id = "fAndSButton"> Feel and spin</button>
+    </div>
+    <!--prints the frinal outcome-->
+    <h5 id = "desiredTensionResult"></h5>
+
+    <br>
+
+    <!-- this section has a written portion on what to do with lead tape and when the user should use it-->
+    <h3>Led Tape<br>led tape can also be added to the racket.<br>**If you do have any arm injuries we recomend to skip this section.**</h3>
+    <img class="racketClockFace" src="leadTapeRacket.webp">
+    <br>
+    <div class = "ContainerForLead">
+        <div class = "leadContent1">12 O'Clock position
+            <h6> Place the tape here to get more power out of the racket
+                 as well as help with the serve power.
+            </h6>
+        </div>
+        <div class = "leadContent1">3 and 9 12 O'Clock position
+            <h6> Place the lead tape here for more stability and control.
+                The sweet spot will become bigger after doing this. </h6>
+        </div>
+        
+        <div class = "leadContent1">6 O'Clock position
+            <h6> Place the lead tape here for a more balanced and stable racket feel.</h6>
+        </div>
+        <div class = "leadContent1">5 and 7 O'Clock position
+            <h6> Recomended for first time using lead tape. It makes the racket 
+                feel heavier overall. </h6>
+        </div>
+    </div>
+
+<br>
+<!--this is another written section where the user should take into consideration for the various grips to use-->
+<h3>What type of grip I should use for My Racket? </h3>
+<br>
+<div class = "ContainerForGrips">
+    <div class = "leadContent1"> Tacky Grip 
+        <h6>Characteristics: Tacky grips provide a sticky feel, enhancing the player's ability to hold the racket firmly.</h6>
+        <h6>When to Use: Tacky grips are beneficial in situations where players might sweat a lot or in humid conditions. They help prevent the racket from slipping during play.</h6>
+    </div>
+    <div class = "leadContent1"> Absorbent Grip 
+        <h6>Characteristics: Absorbent grips are designed to soak up moisture, such as sweat, keeping the grip dry and comfortable.</h6>
+        <h6>When to Use: Absorbent grips are ideal for players who tend to sweat heavily. They provide a dry surface to maintain a solid grip, even in hot and humid weather.</h6>
+    </div>
+    <div class = "leadContent1"> Leather Grip 
+        <h6>Characteristics: Leather grips provide a classic, firm feel and can absorb sweat to some extent.</h6>
+        <h6>When to Use: Some players prefer the traditional and natural feel of leather grips. They can be suitable for players who don't sweat excessively and appreciate a more solid grip.</h6>
+    </div>
+</div>
+<!-- divided the containers here so there is a more pleasing User Interface-->
+<div class = "ContainerForGrips">
+    <div class = "leadContent1"> Cushioned Grip 
+        <h6>Characteristics: Cushioned grips have additional padding for extra comfort and shock absorption.</h6>
+        <h6>When to Use: Cushioned grips are suitable for players who experience discomfort or vibration in their hands during play. They help reduce the impact on the hands and wrists.</h6>
+    </div>
+    <div class = "leadContent1"> Replacement Grip 
+        <h6>Characteristics: Replacement grips are the primary grips that come with the racket. They vary in material and thickness.</h6>
+        <h6>When to Use: Replacement grips are suitable for players who like the feel that came with their racket. They may need replacement when they wear out or if a player wants to try a different type.</h6>
+    </div>
+    <div class = "leadContent1">  Overgrip 
+        <h6>Characteristics: Overgrips are thinner grips that players can wrap over their existing grips to customize feel and absorbency.</h6>
+        <h6>When to Use: Overgrips are versatile and allow players to experiment with different textures, tackiness, or thickness without changing the base grip. They are often used to refresh the grip or adapt to changing weather conditions.</h6>
+    </div>
+</div>
+
+</body>
+<!--our code reference for the string and tension calculations-->
+<script src ="main.js">
+</script>
+</html>

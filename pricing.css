@@ -1,0 +1,299 @@
+body {
+    background-image: url('ai-generated-7900010_640.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    font-weight: 400;
+}
+
+/* this is the start of the styling of the nav bar*/
+header {
+    background-color: white;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav{
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+    position: relative;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+/* creates the start of the animation of the nav bar*/
+nav a:hover{
+    color: navy;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 8px;
+    width: 100%;
+    background-color: navy;
+
+    position: absolute;
+    top: 0;
+    width:0%;
+    transition: all ease-in-out 300ms;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+/* this is the start of the styling for the tables used for pricing*/
+.content-table {
+    border-collapse: collapse;
+    margin-left: 160px;
+    margin-bottom: 90px;
+    font-size: 0.9em;
+    min-width: 400px;
+    right: 200px;
+}
+
+.content-table thead tr{
+    background-color: #009879;
+    color:white;
+    text-align: left;
+
+}
+
+.content-table td{
+   background-color: white; 
+}
+
+.content-table th, .content-table td{
+    padding: 12px 15px;
+}
+
+.content-table tbody tr{
+    border-bottom: thin solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+} 
+
+.content-table tbody tr:last-of-type{
+    border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row{
+    font-weight:bold;
+    color:#009879;
+}
+
+/* start of lead tape adjustments with the hover text effect*/
+.image2{
+    position: relative;
+    border-radius: 5%;
+    top: -500px;
+    left: 1200px;
+    width: 350px;
+}
+
+.ledTapePic{
+    width: 350px;
+    border-radius: 5%;
+    height: 250px;
+    display:block;
+    width:100%;
+}
+
+.image__overlay2{
+    position:absolute;
+    border-radius: 5%;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    color:white;
+    font-family:'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity:0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay2 > *{
+    transform: translateY(30px);
+    transition: transform 0.25s;
+}
+
+.image__overlay2:hover {
+    opacity: 1;
+}
+
+.image__overlay2:hover > *{
+    transform: translateY(0);
+}
+
+.image__title2 {
+    font-size:2em;
+    font-weight: bold;
+
+}
+
+.image__description2{
+    font-size:1.25em;
+    margin-top:0.25em;
+}
+
+/* end of the lead tape ajustments*/
+
+/* start of where we will adjust the image to add animation to the stringer*/
+.image{
+    position: relative;
+    border-radius: 5%;
+    bottom: 925px ;
+    left: 750px;
+    width: 350px;
+}
+
+.easyStringer {
+    border-radius: 5%;
+    width: 350px;
+    height: 300px;
+    display: block;
+    width:100%;
+}
+
+.image__overlay{
+    position:absolute;
+    border-radius: 5%;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    color:white;
+    font-family:'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity:0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay > *{
+    transform: translateY(30px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover > *{
+    transform: translateY(0);
+}
+
+.image__title {
+    font-size:2em;
+    font-weight: bold;
+
+}
+
+.image__description{
+    font-size:1.25em;
+    margin-top:0.25em;
+
+}
+
+/* end of the racket stringing hover animation */
+
+/* start of where we will adjust the overgrip and add the overlaying animation*/
+.image3{
+    position: relative;
+    border-radius: 5%;
+    bottom: 810px ;
+    left: 800px;
+    width: 350px;
+}
+
+.overgrip{
+    border-radius: 5%;
+    width: 350px;
+    height: 300px;
+    display: block;
+    width: 100%;
+}
+
+.image__overlay3{
+    position:absolute;
+    border-radius: 5%;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    color:white;
+    font-family:'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity:0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay3 > *{
+    transform: translateY(30px);
+    transition: transform 0.25s;
+}
+
+.image__overlay3:hover {
+    opacity: 1;
+}
+
+.image__overlay3:hover > *{
+    transform: translateY(0);
+}
+
+.image__title3 {
+    font-size:2em;
+    font-weight: bold;
+
+}
+
+.image__description3 {
+    font-size:1.25em;
+    margin-top:0.25em;
+
+}
+/* the end of the over grip adjustments*/

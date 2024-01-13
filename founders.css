@@ -1,0 +1,104 @@
+body {
+    background-image: url('ai-generated-7900010_640.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    font-weight: 400;
+}
+
+/* here this marks the start of the nav bar */
+header {
+    background-color: white;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav{
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+    position: relative;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+/* this marks the start of the animation for the nav bar segments*/
+nav a:hover{
+    color: navy;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 8px;
+    width: 100%;
+    background-color: navy;
+
+    position: absolute;
+    top: 0;
+    width:0%;
+    transition: all ease-in-out 300ms;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+/*This portion is what makes the about the creator page*/
+h1{
+    text-align: center;
+    color: navy;
+    font-size: xx-large;
+}
+
+p{
+    color: navy;
+    border: 10px;
+    font-size: 25px;
+}
+
+.aboutMeContent{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+
+} 
+
+.PrestonImage{
+    border-radius: 10px;
+    height: 50px;
+    width: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 5px;
+}
