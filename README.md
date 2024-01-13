@@ -1,4 +1,4 @@
-# noStrings Attached Tennis Customizer
+# nNStringZAttached Tennis Customizer
 
 Welcome to noStrings Attached, your go-to destination for customizing tennis rackets to suit your playing style! This website, powered by HTML, CSS, and JavaScript, is designed for amateur tennis players who want to fine-tune their rackets for optimal performance.
 
